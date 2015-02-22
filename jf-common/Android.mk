@@ -19,6 +19,26 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter jactivelte jflte jflteatt jfltecan jfltecri jfltecsp jfltegsm jfltespr jfltetmo jflteusc jfltevzw jfltexx jftddxx,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := KTweaker
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/app/KTweaker.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := KTmonitor
+LOCAL_MODULE_OWNER := samsung
+LOCAL_SRC_FILES := proprietary/app/KTmonitor.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := samsung
 LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
