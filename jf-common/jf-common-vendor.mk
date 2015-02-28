@@ -18,6 +18,8 @@
 PRODUCT_PACKAGES += \
     libtime_genoff \
     libTimeService \
+    KTmonitor \
+    KTweaker \
     TimeService
 
 $(call inherit-product, vendor/samsung/jf-common/jf-common-vendor-blobs.mk)
